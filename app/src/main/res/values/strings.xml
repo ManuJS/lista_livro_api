@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Lista_livro_api</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="buscar">Buscar</string>
+
+
+
 </resources>

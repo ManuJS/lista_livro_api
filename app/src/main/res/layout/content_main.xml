@@ -12,4 +12,44 @@
     tools:context="em.android.lista_livro_api.MainActivity"
     tools:showIn="@layout/activity_main">
 
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/primeiro_linear"
+    android:orientation="horizontal"
+    android:layout_alignRight="@+id/lista"
+    android:layout_alignEnd="@+id/lista"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:weightSum="1">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/button"
+        android:layout_toStartOf="@+id/button"
+        android:layout_weight="1.05" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buscar"
+        android:id="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/lista"
+        android:layout_alignEnd="@+id/lista" />
+
+</LinearLayout>
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/primeiro_linear">
+
+    </ListView>
+
+
 </RelativeLayout>
